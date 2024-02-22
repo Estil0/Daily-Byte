@@ -7,7 +7,7 @@ Ex: Given the following strings...
 #include<algorithm>
 #include<iostream>
 
-std::string reverseString(std::string s);
+std::string reverseString(std::string);
 
 int main(){
     std::string s;
@@ -29,7 +29,7 @@ std::string reverseString(std::string s){
     for(char c:s)
         sReverse=c+sReverse;
     return sReverse;
-    //time complexity: O(n), space complexity: O(1)
+    //time complexity: O(n), space complexity: O(n)
     */
     //Solution 3: using built-in reverse() function
     reverse(s.begin(),s.end());
